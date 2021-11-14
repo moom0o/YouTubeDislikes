@@ -11,7 +11,7 @@ curl -o "./videos/$1.json" --location --request POST 'https://www.youtube.com/yo
             "clientVersion": "2.20210101"
         }
     },
-    "videoId": "9bZkp7q19f0"
+    "videoId": "$1"
 }' && if grep -q "dislike this video along with" "./videos/$1.json";then # Check if the json has dislikes, there's about a 10% chance of not being able to see dislikes, the program should simply restart the download.
         echo "the string exists! $1";
         break;

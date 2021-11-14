@@ -1,3 +1,6 @@
+# CURRENTLY BROKEN, IF ANYONE KNOWS HOW TO FIX THE POSITIONAL PARAMETERS, PLEASE TELL ME!
+The problem is that when I try to use $1 as the video id (so I can do ./curl.sh ID, google says the video is unavailable, however if I hard code the id into curl.sh it works.
+
 # YouTubeDislikes
 Archiving YouTube dislikes (and other video information) with YouTube's api!
 

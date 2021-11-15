@@ -6,7 +6,9 @@ Archiving YouTube dislikes (and other video information) with YouTube's api!
 * Add your video ids to ids.txt, or use the default ones from sponsorblock, however I've already archived them. Recommended to run `dos2unix ids.txt` so you don't have dos newlines, the program does not work correctly with them.
 * Run `bash start.sh`
 * Tell YouTube to fuck off.
+
 ## Datasets of ids
+### Please create a pull request/issue if you can find any more datasets. The more videos the better! We only have a few weeks left.
 * ids.txt - This file contains every video from [SponsorBlock's database](https://sponsor.ajay.app/database)
 * https://archive.org/details/archived_annotations_video_ids.csv
 

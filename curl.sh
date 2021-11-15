@@ -1,4 +1,5 @@
 #!/bin/bash
+COUNT=0
 while :; do
 echo "Starting download $1";
 curl -o "./videos/$1.json" --location --request POST 'https://www.youtube.com/youtubei/v1/next?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8' --header 'Content-Type: application/json' --data '{
@@ -16,5 +17,11 @@ curl -o "./videos/$1.json" --location --request POST 'https://www.youtube.com/yo
         break;
 else
         echo "the string does not exist"
+        let COUNT++
+        if [ $COUNT -ge 3 ]; then
+                break;
+        else
+                echo "Restarting download because dislikes didn't show";
+        fi
 fi
 done
